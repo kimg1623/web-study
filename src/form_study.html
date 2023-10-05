@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <div id="wrap" align="center">
+        <h1>회 원 가 입</h1>
+        <table border="1">
+            <form>
+                <tr>
+                    <th width="80px">
+                        <!--label&input 상호작용 : for 속성과 id 속성이 같아야 함-->
+                        <label for="userid">아이디</label>
+                    </th>
+                    <td width="200px">
+                        <input type="text" name="userid" id="userid" placeholder="아이디를 입력하세요" autofocus size="20" >
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label for="userpw">비밀번호</label>
+                    </th>
+                    <td>
+                        <input type="password" name="userpw" id="userpw" size="10">
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label for="sex">성별</label>
+                    </th>
+                    <td>
+                        <input type="radio" name="sex" id="sex" value="male" checked>남
+                        <input type="radio" name="sex" id="sex" value="female">여
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        좋아하는 과일
+                    </th>
+                    <td>
+                        <!--checkbox로 중복 체크할 수있음
+                            const query = 'input[name="animal"]:checked';
+                            => js에서 코드를 이렇게 짜기 때문에 checkbox속성 중 name을 맞추고 value값을 부여-->
+                        <input type="checkbox" name="fruit" id="banana" value="banana">
+                        <label for="banana">바나나</label>
+                        <input type="checkbox" name="fruit" id="apple" value="apple">
+                        <label for="apple">사과</label>
+                        <input type="checkbox" name="fruit" id="orange" value="orange">
+                        <label for="orange">오렌지</label>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label for="hobby">취미</label>
+                    </th>
+                    <td>
+                        <!--select는 콤보박스 잊지 말기-->
+                        <select name="hobby" id="hobby">
+                            <option value="swimming">수영</option>
+                            <option value="reading">독서</option>
+                            <option value="singing">노래</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label for="introduce">자기소개</label>
+                    </th>
+                    <td>
+                        <textarea cols="30" rows="5" name="introduce" id="introduce"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label for="viewImage">이미지</label>
+                    </th>
+                    <td>
+                        <!--input 태그 크기 조정: type="image"인 경우에만 width 사용가능-->
+                        <input type="image" src="./image.png" width="100px" id="viewImage">
+                    </td>
+                </tr>
+                <tr>
+                    <!--셀 병합 (행: colspan, 열: rowspan)-->
+                    <td colspan="2" align="center">
+                        <input type="submit" value="확인"> <!--type="button" onclick="submit()"로도 사용가능-->
+                        <input type="reset" value="다시작성">
+                    </td>
+                </tr>            
+            </form>
+        </table>
+    </div>
+</body>
+</html>
