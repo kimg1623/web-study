@@ -1,4 +1,5 @@
 'use strict'
+/*********** 문제1: 구구셈 ***********/
 document.write("<h3>문제1: 구구셈</h3>");
 for(let i=2; i<=4; i++){
   for(let j=1; j<=9; j++){
@@ -7,7 +8,7 @@ for(let i=2; i<=4; i++){
   document.write("<br>");
 }
 
-
+/*********** 문제2: 학점 ***********/
 document.write("<h3>문제2: 학점</h3>");
 let score = 83;
 switch(Math.floor(score/10)){ //javascript에서는 나눗셈이 자동실수 계산됨
@@ -25,7 +26,7 @@ switch(Math.floor(score/10)){ //javascript에서는 나눗셈이 자동실수 �
     document.write(`점수: ${score} = 학점: F<br>`); break;
 }
 
-
+/*********** 문제3: 값3개 중 중간값 ***********/
 document.write("<h3>문제3: 값3개 중 중간값</h3>");
 let arr = [30, 41, 39];
 if (arr[0]>=arr[1]&&arr[0]<=arr[2]){
@@ -36,7 +37,7 @@ if (arr[0]>=arr[1]&&arr[0]<=arr[2]){
   document.write(`중간값: ${arr[2]}<br>`);
 }
 
-
+/*********** 문제4: 삼각형 만들기 ***********/
 document.write("<h3>문제4: 삼각형 만들기</h3>");
 let rows = 3;
 for(let i=0;i<rows;i++){
@@ -48,7 +49,7 @@ for(let i=0;i<rows;i++){
   document.write(str+"<br>");
 }
 
-
+/*********** 문제5: 값10개 중 최대값/최소값/중앙값/최대와 최소를 제외한 합계 구하기 ***********/
 document.write("<h3>문제5: 값10개 중 최대값/최소값/중앙값/최대와 최소를 제외한 합계 구하기</h3>");
 arr = [5,2,4,7,6,8,1,10,9,3];
 document.write("주어진 배열 : "+arr+"<br>");
